@@ -1,0 +1,14 @@
+.maps-button{
+    background: linear-gradient(45deg, rgb(32, 220, 142), blue, rgb(29, 251, 210));
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.maps-button:hover{
+    color: rgb(30, 241, 224);
+}

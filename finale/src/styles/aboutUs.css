@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+body {
+	background: linear-gradient(-45deg, #603F26, #6C4E31, #FFDBB5, #FFEAC5);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.about-us {
+    padding-top: 100px; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-container {
+    display: flex;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;  
+    width: 100%;
+    margin: 0 auto;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.about-us .content {
+    max-width: 100%;
+    flex: 1; 
+    color: #333;
+    text-align: justify; 
+}
+
+.about-us .logo {
+    flex: 0 0 300px;
+    margin-left: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.about-us .logo img {
+    width: auto;
+    height: auto;
+    max-width: 300px; 
+}
+
+.about-us h1 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: justify;
+}
+
+.about-us p {
+    margin-bottom: 10px;
+    color: #333;
+    text-align: justify;
+}
+
+.about-us h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: justify;
+}
+
+.social-media-links {
+    font-size: large;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-media-links li {
+    margin: 0;
+}
+
+.social-media-links a {
+    color: #C87E4F;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-media-links a:hover {
+    color: #333;
+}
+
+.page-header_title {
+    padding: 42px 16px 0;
+    margin-bottom: 42px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #333;
+    letter-spacing: .3px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-us-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .about-us .logo {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .about-us .logo img {
+        max-width: 100%;
+    }
+    
+    .about-us .content {
+        max-width: 100%;
+        text-align: justify;
+    }
+}
